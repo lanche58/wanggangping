@@ -1,0 +1,68 @@
+.sec-list{
+  li{
+    margin-bottom: 20px;
+  }
+  a{
+    color: $mc3;
+    @media screen and (min-width:1025px) {
+      &:hover{
+        .wrap{
+          transform: none;
+          @include show;
+        }
+        .desc:before{
+          height: 34px + 20px + 50px;
+        }
+      }
+    }
+  }
+  .pai{
+    padding-bottom: (480 / 1920) * 100%;
+  }
+  .desc{
+    position: relative;
+    margin: 20px (260 / 1920) * 100% 0;
+    padding-left: 20px;
+    &:before{
+      @include ba;
+      left: 0;
+      bottom: 0;
+      width: 6px;
+      height: 34px;
+      background: $mc2;
+      @include mt6;
+    }
+  }
+  .nowti{
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .txts{
+    @include plr;
+    bottom: 0;
+    padding: 0 (260 / 1920) * 100%;
+  }
+  .wrap{
+    width: 800px;
+    padding: 50px 50px 40px;
+    margin-left: -50px;
+    @include b5;
+    color: #fff;
+    transform: translateY(100%);
+    @include hide;
+    @include mt6;
+  }
+  .tx{
+    max-height: 28px * 5;
+    font-size: 16px;
+    line-height: 28px !important;
+  }
+  .btn-wrap{
+    margin-top: 30px;
+    text-align: right;
+  }
+  .btn{
+    color: $fc4;
+  }
+}

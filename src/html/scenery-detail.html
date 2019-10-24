@@ -1,0 +1,101 @@
+@@include('./top.html')
+</head>
+<body>
+@@include('./header.html', {
+    "scenery": "act"
+})
+<div class="banner-box scroll-animation">
+    <div class="sce-banner cg-s u-slick">
+        <div class="item"><div class="pic2"><img src="img/sec6.jpg" alt=""></div></div>
+        <div class="item"><div class="pic2"><img src="img/sec6.jpg" alt=""></div></div>
+    </div>
+    <div class="sce-arrow-wrap sce-prev-wrap"><a class="sce-prev icon iconfont iconxiangzuojiantou"></a></div>
+    <div class="sce-arrow-wrap sce-next-wrap"><a class="sce-next icon iconfont iconxiangyoujiantou"></a></div>
+    <div class="go-btns white go-btns2 fib">
+        <a href="javascript:;" class="ib">想去(123)</a>
+        <a href="javascript:;" class="ib">去过(123)</a>
+    </div>
+    <div class="sce-ti-wrap"><h3 class="nowti pw splwo fadeIn">云瀑云海</h3></div>
+    <ul class="back-wrap white back-wrap1">
+        <li><a href="#">上一景区</a></li>
+        <li><p class="nowti">云瀑云海</p></li>
+        <li><a href="#">下一景区</a></li>
+        <li><a href="scenery.html">返回</a></li>
+    </ul>
+</div>
+<!-- banner-box -->
+<div class="psfixbg"></div>
+<div class="psfixbg linen-fixbg"></div>
+<div class="container">
+    <div class="sce1 pw2">
+        <div class="ab-intro ab-pa">
+            <div class="ab-ti"><p class="ch fwb">云瀑云海</p></div>
+            <ul class="feature-nav feature-nav1">
+                <li class="trans transY bdsharebuttonbox"><a href="javascript:;" data-cmd="share" class="icon iconfont iconzanzhuanhuan0101">分享</a></li>                
+            </ul>
+            <div class="freeTx">
+                <p style="font-size: 16px;">王岗坪地势非常平坦，长满了草甸、灌丛、草丛，春夏季节雨量丰沛，山间流淌着汩汩清泉，干涸的沼泽也苏醒过来，非常适合放牧，牧民们将牛羊马匹赶到山上，仍由它们自由放牧，到了秋冬季节牛羊马匹就会乖乖的自己下山，可以说是非常的神奇。高山之巅，雪山之下，森林之中，悠闲的牛儿，矫健的马儿，比起“天苍苍，野茫茫，风吹草低现牛羊”的塞北风光是不是又别有一番风光呢!</p>
+                <br/>
+                <p><img src="img/sec7.jpg" alt=""></p>
+            </div>
+            <div class="go-btns go-btns1 fib">
+                <a href="javascript:;" class="ib">想去(123)</a>
+                <a href="javascript:;" class="ib">去过(123)</a>
+            </div>             
+        </div>
+    </div>
+    <ul class="back-wrap back-wrap2">
+        <li class="trans transY"><a href="#">上一景区</a></li>
+        <li class="trans transY"><p class="nowti">云瀑云海</p></li>
+        <li class="trans transY"><a href="#">下一景区</a></li>
+        <li class="trans transY"><a href="scenery.html">返回</a></li>
+    </ul>
+</div>
+@@include('./footer.html')
+<script src="js/plugin.js"></script>
+<script src="js/page.js"></script>
+<script>
+    window._bd_share_config = {
+        common : {
+            bdText : '自定义分享内容', 
+            bdDesc : '自定义分享摘要', 
+            bdUrl : '自定义分享url地址',   
+            bdPic : '自定义分享图片'
+        },
+        share : [{}]
+    }
+    with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+    $(function() {
+        function init() {
+            if (!isMobile) {
+                $('.sce-banner .item').css({ height: w_height - $mtoph });
+                setImgMax($('.sce-banner .pic2'), 1920, 1000, w_width, w_height - $mtoph);
+            }else{
+                $('.sce-banner .item').css({ height: 'auto' });
+                $('.sce-banner .pic2').attr({ style: '' });
+            }
+        }
+        init();
+        $(window).resize(function() {
+            init();
+        });
+        $('.sce-banner').slick({
+            speed: 1000,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            fade: true,
+            pauseOnHover: false
+        });
+        $('.sce-prev').click(function(e){
+            e.preventDefault();
+            $('.sce-banner').slick('slickPrev');
+        });
+        $('.sce-next').click(function(e){
+            e.preventDefault();
+            $('.sce-banner').slick('slickNext');
+        });
+    })
+</script>
+</body>
+</html>

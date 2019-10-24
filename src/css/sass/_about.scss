@@ -1,0 +1,133 @@
+.ab-intro{
+  position: relative;
+  padding-left: 56px;
+  &:before{
+    @include ba;
+    left: 0;
+    top: -80px;
+    width: 8px;
+    height: 240px;
+    background: $mc1;
+    transform-origin: center top;
+    animation: longShort 1.2s infinite alternate linear;
+  }
+  .ab-ti{
+    margin-bottom: 35px;
+  }
+}
+
+.ab-fixbg{
+  height: 675px;
+}
+
+.ab3, .ab1{
+  padding: 90px 0 100px;
+}
+.ab2{
+  padding: 90px + 35px 0 55px;
+}
+
+.ab-pa{
+  margin-left: 135px;
+}
+
+.map-list{
+  .pai{
+    display: block;
+    padding-bottom: (629 / 856) * 100%;
+  }
+  .slick-dots{
+    position: static;
+    text-align: left;
+    li{
+      width: auto;
+      height: auto;
+      background: none;
+      margin: 0 28px 0 0;
+      a{
+        position: relative;
+        padding-top: 24px;
+        text-indent: 0;
+        white-space: nowrap;
+        letter-spacing: 0;
+        line-height: 1.4;
+        font-size: 16px;
+        font-weight: bold;
+        color: $mc3;
+        &:before{
+          @include ba;
+          position: absolute;
+          left: 50%;
+          top: -10px;
+          margin-left: -2px;
+          width: 4px;
+          height: 24px;
+          background: $mc2;
+          transform-origin: center top;
+          transform: scaleY(0);
+          @include hide;
+          @include mt4;
+        }
+      }
+      @media screen and (min-width:1025px) {
+        &:hover a{
+          color: $mc2;
+        }
+      }
+    }
+    .slick-active{
+      a{
+        color: $mc2;
+        &:before{
+          transform: none;
+          @include show;
+        }
+      }
+    }
+  }
+}
+
+.big-btn{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background: $mc3;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  @media screen and (min-width:1025px) {
+    &:hover{
+      background: $mc2;
+    }
+  }
+}
+
+.time-table{
+  width: 100%;
+  color: $mc3;
+  td{
+    border: 2px solid $mc3;
+    height: 123px;
+    padding: 20px 50px;
+  }
+  .name{
+    font-size: 16px;
+  }
+  .time{
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 1;
+    font-family: Microsoft YaHei;
+  }
+}
+
+.ab5{
+  padding-top: 160px;
+}
+
+.ab6{
+  padding: 120px + 80px 0 100px;
+}
+

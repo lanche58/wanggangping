@@ -1,0 +1,109 @@
+.mtop, .header{
+  height: 80px;
+}
+
+.header{
+  line-height: 24px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+  a{
+    color: $fc4;
+  }
+  .logo{
+    width: 146px;
+    float: left;
+    margin: (80px - 50px) / 2 0 0 30px;
+  }
+  .link{
+    float: left;
+    > li{
+      position: relative;
+      float: left;
+      &:hover{
+        .tnav{
+          transform: none;
+          @include show;
+        }
+      }
+      > a{
+        display: block;
+        position: relative;
+        padding: (80px - 24px) / 2 40px;
+        &:before{
+          @include hl($mc1, 6px);
+        }
+        &:hover{
+          color: $mc4;
+          &:before{
+            @include hlw;
+          }
+        }
+      }
+    }
+    .icon{
+      display: inline-block;
+      vertical-align: bottom;
+    }
+    i.icon{
+      margin-right: 5px;
+    }
+    span.icon{
+      font-size: 12px;
+      transform-origin: right center;
+      transform: scale(.67);
+    }
+  }
+  .nav{
+    float: left;
+    > li{
+      position: relative;
+      float: left;
+      &:hover{
+        .tnav{
+          transform: none;
+          @include show;
+        }
+      }
+      &:first-child{
+        > a{
+          border-left: 1px solid rgba(112, 112, 112, .1);
+        }
+      }
+      > a{
+        display: block;
+        position: relative;
+        padding: (80px - 24px) / 2 60px;
+        border-right: 1px solid rgba(112, 112, 112, .1);
+        font-size: 16px;
+        &:before{
+          @include hl($mc1, 6px);
+        }
+        &.act,
+        &:hover{
+          color: $mc4;
+          &:before{
+            @include hlw;
+          }
+        }
+      }
+    }
+  }
+  .tnav{
+    @include plr;
+    top: 100%;
+    padding: 20px 0;
+    background: $mc3;
+    transform: translateY(20px);
+    @include hide;
+    @include mt4;
+    > a{
+      display: block;
+      padding: 7px 5px;
+      color: #fff;
+      line-height: 1.4;
+      text-align: center;
+      &:hover{
+        color: $mc4;
+      }
+    }
+  }
+}

@@ -1,0 +1,155 @@
+@@include('./top.html')
+</head>
+<body>
+@@include('./header.html', {
+    "about": "act"
+})
+@@include('./pbanner.html', {
+    "img": "ab_banner2.jpg",
+    "en": "Great beauty<br/>Wang Gang Ping",
+    "ch": "大美王岗坪"
+})
+<div class="pnav">
+    <ul>
+        <li class="trans transY"><a href="about.html?#ab4">景区地图</a></li>
+        <li class="trans transY"><a href="about.html?#ab5">开放时间</a></li>
+        <li class="trans transY"><a href="about.html?#ab6">游览须知</a></li>
+    </ul>
+</div>
+<div class="psfixbg"></div>
+<div class="psfixbg linen-fixbg"></div>
+<div class="container about-container" id="ab">
+    <div class="ab-nav">
+        <ul class="pw2 fib">
+            <li class="ib"><a href="about.html?point=ab">景区概况<i class="sj sj-b"></i></a></li>
+            <li class="ib"><a class="act" href="about1.html?point=ab">景区导览<i class="sj sj-b"></i></a></li>
+        </ul>
+    </div>
+    <div class="ab4 pw2 abco" id="ab4">
+      	<div class="ab-pa">
+			<div class="map-list cg-s u-slick">
+				<div class="item" data-href="img/about3.jpg" data-size="856x629" data-title="景点地图"><span class="pai"><img src="img/about3.jpg" alt=""></span><a class="icon iconfont iconfangdajing big-btn"></a></div>
+				<div class="item" data-href="img/about3.jpg" data-size="856x629" data-title="游客中心地图"><span class="pai"><img src="img/about3.jpg" alt=""></span><a class="icon iconfont iconfangdajing big-btn"></a></div>
+			</div>
+		</div>
+	</div>
+	<!-- ab4 -->
+	<div class="ab5 pw2 abco" id="ab5">
+		<div class="ab-pa">
+			<table class="time-table">
+				<tr>
+					<td>
+						<p class="name">秋冬季节</p>
+						<p class="time">9:00 -- 17:30</p>
+					</td>
+					<td>
+						<p class="name">秋冬季节</p>
+						<p class="time">9:00 -- 17:30</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<div class="freeTx">
+							<p style="font-size: 16px;">景区暂定于20xx年x月x日开放，敬请期待。</p>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<!-- ab5 -->
+	<div class="ab6 pw2 abco" id="ab6">
+		<div class="ab-intro ab-pa">
+			<div class="ab-ti"><p class="ch fwb">安全游览须知</p></div>
+			<div class="freeTx">
+				<p style="font-size: 16px;">尊敬的游客朋友欢迎您来到王岗坪景区观光游览，为了您的安全请您仔细阅读以下安全须知：<br/>
+					一、王岗坪景区海拔从1100米到3600米，山势陡峭，道路险峻。为确保安全，景区交通实行封闭式管理，自驾车辆一律停放在游客中心，游客朋友需换乘索道进入景区。<br/>
+					二、王岗坪景区海拔高，气候多变，注意增减衣服，请患有哮喘、冠心病、心脏病等急慢性疾病的游客朋友游览过程中量力而行。<br/>
+					三、游览过程中请勿吸烟，严禁烟火。请勿攀折树木、花草，乱扔垃圾，请勿采食野果、野草、蘑菇。<br/>
+					四、游览过程中请勿偏离游道，进入未开发区域。秋冬季节，请于17:30前离开林区，返回驻地；夏秋季节，请于18:00前离开林区，返回驻地。<br/>
+					五、游览过程中请照顾好随行老人、小孩，如遇突发情况请就近联系附近的工作人员或拔打救援电话。</p>
+			</div>                     
+		</div>
+	</div>
+	<!-- ab6 -->
+</div>
+@@include('./feature.html')
+@@include('./footer.html')
+<div id="gallery" class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="pswp__bg"></div>
+	<div class="pswp__scroll-wrap">
+		<div class="pswp__container">
+		<div class="pswp__item"></div>
+		<div class="pswp__item"></div>
+		<div class="pswp__item"></div>
+		</div>
+		<div class="pswp__ui pswp__ui--hidden">
+		<div class="pswp__top-bar">
+			<div class="pswp__counter"></div>
+			<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+			<button class="pswp__button pswp__button--share" title="Share"></button>
+			<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+			<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+			<div class="pswp__preloader">
+				<div class="pswp__preloader__icn">
+					<div class="pswp__preloader__cut">
+					<div class="pswp__preloader__donut"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+			<div class="pswp__share-tooltip"></div>
+		</div>
+		<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+		<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+		<div class="pswp__caption">
+			<div class="pswp__caption__center">
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
+<script src="js/plugin.js"></script>
+<script src="js/page.js"></script>
+<script src="js/big.js"></script>
+<script>
+    $(function() {
+		var name = [];
+		$('.map-list .item').each(function(i, e) {
+			name[i] = $(this).data('title');
+		});
+        $('.map-list').slick({
+			speed: 1000,
+            arrows: false,
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            fade: true,
+            pauseOnHover: false
+		});
+		$('.map-list .slick-dots li').each(function(i, e) {
+			$(this).find('a').html(name[i]);
+		});
+		initPhotoSwipeFromDOM('.map-list');
+		$('.pnav a').bind(_click, function(e) {
+            var hash = $(this).attr('href').split('#')[1];
+            if(hash){
+                e.preventDefault();
+                $('html,body').animate({scrollTop: $('#' + hash).offset().top - $mtoph}, 800);
+            }
+        });
+        $(window).scroll(function() {
+            scrollHandle($('.abco'), $('.pnav li'));
+        });
+        function init() {
+            const hash = getParamValue('point');
+            if (hash) {
+                $('html, body').animate({scrollTop: $('#' + hash).offset().top - $mtoph}, 0);
+            }
+        }
+        init();
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.linen_bg{
+    background: url('../images/linen1.jpg');
+}
+
+.ab-ti{
+    .ch{
+        font-size: 32px;
+        color: $mc1;
+    }
+}
+
+
+.linen-fixbg{
+    top: 80px + 100px;
+    left: auto;
+    width: 50%;
+    padding-left: 480px;
+    box-sizing: content-box;
+    background: url('../images/linen1.jpg') right top;
+}
+
+.about-container{
+    padding-top: 90px;
+    .ab-nav{
+        margin-bottom: 80px;
+    }
+}

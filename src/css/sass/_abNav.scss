@@ -1,0 +1,38 @@
+.ab-nav{
+  li{
+    margin: 0 40px;
+  }
+  a{
+    position: relative;
+    display: block;
+    padding-bottom: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: $mc3;
+    &.act{
+      color: $mc2;
+      .sj{
+        @include show;
+        transform: none;
+      }
+    }
+    @media screen and (min-width:1025px) {
+      &:hover{
+        color: $mc2;
+      }
+    }
+  }
+  .sj{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -8px;
+    color: $mc2;
+    border-left-width: 8px;
+    border-right-width: 8px;
+    border-top-width: 8px;
+    transform: translateY(-100%);
+    @include hide;
+    @include mt3;
+  }
+}

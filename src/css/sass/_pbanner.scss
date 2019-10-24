@@ -1,0 +1,39 @@
+.pbanner{
+  overflow: visible;
+  .txts{
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    bottom: 0;
+    padding-bottom: 115px;
+    color: #fff;
+  }
+  .en{
+    font-size: 48px;
+    margin-bottom: 35px;
+  }
+  .ch{
+    font-size: 24px;
+  }
+  .line{
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    margin-left: -2px;
+    width: 4px;
+    height: 100px;
+    background: $mc2;
+    transform-origin: center top;
+    transform: scaleY(0);
+    transition: transform .8s .5s;
+  }
+}
+
+.active{
+  &.pbanner{
+    .line{
+      transform: none;
+      animation: longShort 1.2s (.8s + .5s) infinite alternate linear;
+    }
+  }
+}

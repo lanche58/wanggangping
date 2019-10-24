@@ -1,0 +1,346 @@
+.sce-banner{
+  .pic2{
+    @media screen and (min-width:1025px) {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    &:after{
+      @include ba;
+      @include tblr;
+      background: url('../images/shadow2.png') repeat-x left bottom;
+    }
+  }
+}
+
+.sce-arrow-wrap{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 20%;
+  z-index: 101;
+  > a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -24px 0 0 -24px;
+    width: 48px;
+    height: 48px;
+    @include b5;
+    background: rgba(0, 0, 0, .3);
+    line-height: 48px;
+    text-align: center;
+    color: #fff;
+    @include hide;
+    transition: transform .6s, opacity .4s, visibility .4s, background .3s;
+    @media screen and (min-width:1025px) {
+      &:hover{
+        background: $mc4;
+      }
+    }
+  }
+  .sce-prev{
+    transform: translateX(100%);
+  }
+  .sce-next{
+    transform: translateX(-100%);
+  }
+}
+
+.sce-prev-wrap{
+  left: 0;
+  @media screen and (min-width:1025px) {
+    &:hover{
+      .sce-prev{
+        transform: none;
+        @include show;
+      }
+    }
+  }
+}
+
+.sce-next-wrap{
+  right: 0;
+  @media screen and (min-width:1025px) {
+    &:hover{
+      .sce-next{
+        transform: none;
+        @include show;
+      }
+    }
+  }
+}
+
+
+.go-btns{
+  text-align: left;
+  a{
+    min-width: 96px;
+    height: 40px;
+    border: 1px solid $mc3;
+    padding: 0 10px;
+    border-radius: 20px;
+    text-align: center;
+    color: $mc3;
+    line-height: 38px;
+    + a{
+      margin-left: 15px;
+    }
+  }
+  &.white{
+    a{
+      border-color: #fff;
+      color: #fff;
+    }
+  }
+}
+
+.go-btns1{
+  a{
+    @media screen and (min-width:1025px) {
+      &:hover{
+        background: $mc2;
+        border-color: $mc2;
+        color: #fff;
+      }
+    }
+    &.act{
+      background: $mc2;
+      border-color: $mc2;
+      color: #fff;
+    }
+  }
+}
+
+.go-btns2{
+  a{
+    @media screen and (min-width:1025px) {
+      &:hover{
+        background: $mc4;
+        border-color: $mc4;
+        color: #fff;
+      }
+    }
+    &.act{
+      background: $mc4;
+      border-color: $mc4;
+      color: #fff;
+    }
+  }
+}
+
+.banner-box{
+  .go-btns{
+    position: absolute;
+    z-index: 200;
+    right: 35px;
+    bottom: 35px;
+  }
+  .sce-ti-wrap{
+    @include plr;
+    z-index: 199;
+    bottom: -12px;
+    .nowti{
+      padding-left: 17px;
+      border-left: 6px solid $mc2;
+      padding-bottom: 60px;
+      font-size: 48px;
+      color: #fff;
+      font-weight: bold;
+      line-height: 1.1;
+    }
+  }
+  .back-wrap{
+    z-index: 200;
+    position: absolute;
+    left: 35px - 23px;
+    bottom: 25px;
+  }
+}
+
+.back-wrap{
+  font-weight: bold;
+  a{
+    display: block;
+    padding-left: 17px + 6px;
+    font-size: 16px;
+    color: $mc3;
+  }
+  .nowti{
+    border-left: 6px solid $mc2;
+    padding-left: 17px;
+    line-height: 48px;
+    font-size: 24px;
+    color: $mc2;
+  }
+  &.white{
+    a{
+      color: #fff;
+    }
+  }
+}
+
+.back-wrap1{
+  .nowti{
+    display: none;
+  }
+  a{
+    @media screen and (min-width:1025px) {
+      &:hover{
+        color: $mc4;
+      }
+    }
+  }
+}
+
+.back-wrap2{
+  position: fixed;
+  z-index: 900;
+  left: 50%;
+  top: 80px;
+  margin: 100px 0 0 (-(960px / 2) - 240px);
+  width: 200px;
+  a{
+    @media screen and (min-width:1025px) {
+      &:hover{
+        color: $mc2;
+      }
+    }
+  }
+}
+
+.sce1{
+  padding: 150px 0 100px;
+  .ab-ti{
+    display: none;
+  }
+  .go-btns{
+    margin-top: 55px;
+  }
+}
+
+.feature-nav1{
+  top: 180px;
+}
+
+.sce_pbanner{
+  .pic2{
+    &:after{
+      @include ba;
+      @include tblr;
+      background: url('../images/shadow2.png') repeat-x left bottom;
+    }
+  }
+}
+
+.cul-sce-list{
+  a{
+    display: block;
+    position: relative;
+    padding-top: 65px;
+    color: $mc3;
+    @media screen and (min-width:1025px) {
+      &:hover{
+        .desc{
+          background: #fff;
+        }
+      }
+    }
+  }
+  .pai{
+    padding-bottom: (300 / 400) * 100%;
+  }
+  .desc{
+    float: right;
+    position: relative;
+    width: (510 / 869) * 100%;
+    height: 305px;
+    padding: 40px 35px 40px 95px;
+    @include mt4;
+    &:before, &:after{
+      @include ba;
+      right: 35px;
+      height: 4px;
+      background: $mc3;
+    }
+    &:before{
+      left: 20px;
+      top: 40px;
+      z-index: 9;
+    }
+    &:after{
+      left: 95px;
+      bottom: 40px;
+    }
+  }
+  .nowti{
+    margin-top: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    color: $mc1;
+  }
+  .tx{
+    margin: 15px 30px 0 0;
+    font-size: 16px;
+    height: 24px * 3;
+  }
+  .btn{
+    color: $mc3;
+  }
+  .picbox{
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: (400 / 869) * 100%;
+  }
+  .btn-wrap{
+    margin-top: 25px;
+  }
+}
+
+.sce2{
+  padding: 120px 0 200px;
+}
+
+.sce3{
+  .ab-ti{
+    display: block;
+  }
+}
+
+.cul-back{
+  position: fixed;
+  z-index: 900;
+  left: 50%;
+  top: 80px;
+  margin: 100px 0 0 (-(960px / 2) - 240px);
+  width: 100px;
+  li{
+    &:first-child{
+      position: relative;
+      padding-top: 30px;
+      &:before{
+        @include ba;
+        left: 0;
+        top: 0;
+        width: 12px;
+        height: 6px;
+        background: $mc2;
+      }
+    }
+  }
+  a{
+    display: block;
+    padding: (40px - 24px) / 2 0;
+    line-height: 24px;
+    font-size: 16px;
+    color: $mc3;
+    font-weight: bold;
+    @media screen and (min-width:1025px) {
+      &:hover{
+        color: $mc2;
+      }
+    }
+  }
+}

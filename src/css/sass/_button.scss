@@ -1,0 +1,23 @@
+.btn-more{
+    line-height: 20px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    @include mt3;
+    .icon{
+        display: inline-block;
+        margin-left: 6px;
+        vertical-align: bottom;
+        transition: transform 400ms;
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .btn-more-hv.btn-more:hover,
+    .btn-more-hv:hover .btn-more{
+        color: $mc2;
+        .icon{
+            transform: translateX(5px);
+        }
+    }
+}
