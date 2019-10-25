@@ -1,0 +1,80 @@
+.seeMoreBigImgsWrap{
+  position: fixed;
+  z-index: 9999;
+  @include tblr;
+  background: #fff;
+  background: rgba(255, 255, 255, .9);
+  display: none;
+  .moreBigImgs{
+    height: 100%;
+  }
+  .item{
+    img{
+      position: absolute;
+      @include tblr;
+      width: auto;
+      height: auto;
+      max-height: 100%;
+      max-width: 100%;
+      margin: auto;
+      vertical-align: middle;
+    }
+  }
+  .nowti{
+    @include plr;
+    z-index: 200;
+    bottom: 20px;
+    padding: 0 5.7%;
+    text-align: center;
+    color: $mc1;
+  }
+}
+
+.slick-arrow{
+  font-family: "iconfont" !important;
+}
+
+.slick-prev{
+  &:before{
+    content: "\e660";
+  }
+}
+
+.slick-next{
+  &:before{
+    content: "\e65f";
+  }
+}
+
+.bigimgs-close,
+.bigimgs-arrows .slick-arrow{
+  background: $mc3;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #fff;
+  @media screen and (min-width:1025px) {
+    &:hover{
+      background: $mc2;
+    }
+  }
+}
+
+.bigimgs-arrows{
+  font-weight: bold;
+  .slick-prev{
+    left: 5.7%;
+  }
+  .slick-next{
+    right: 5.7%;
+  }
+}
+
+.bigimgs-close{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 200;
+  font-size: 12px;
+}

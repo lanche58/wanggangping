@@ -1,8 +1,24 @@
 .news-list{
   a{
     display: block;
+    position: relative;
     padding: 25px;
     color: $mc3;
+    overflow: hidden;
+    &:before, &:after{
+      @include ba;
+      z-index: 2;
+      left: 25px;
+      right: 330px + 25px;
+      height: 4px;
+      background: $mc3;
+    }
+    &:before{
+      top: 25px;
+    }
+    &:after{
+      bottom: 25px;
+    }
     @media screen and (min-width:1025px) {
       &:hover{
         background: #fff;
@@ -19,10 +35,7 @@
     height: 225px;
   }
   .desc{
-    height: 225px;
-    border-top: 4px solid $mc3;
-    border-bottom: 4px solid $mc3;
-    padding-top: 23px;
+    padding: 28px 0 20px;
     overflow: hidden;
   }
   .nowti{
@@ -47,6 +60,15 @@
   .clearfix{
     margin-top: 35px;
   }
+  .item2{
+    &:before, &:after{
+      right: 25px;
+    }
+    .tx{
+      height: auto;
+      max-height: 24px * 2;
+    }
+  }
 }
 
 .nw-date{
@@ -55,5 +77,22 @@
   line-height: 20px;
   &:before{
     margin-right: 5px;
+  }
+}
+
+.nw-pa{
+  margin-left: 115px;
+}
+
+.nw1{
+  .pager{
+    margin: 50px 0 0 25px;
+  }
+}
+
+.ab-ti{
+  .nw-date{
+    margin-top: 15px;
+    color: $mc3;
   }
 }

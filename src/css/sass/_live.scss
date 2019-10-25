@@ -1,0 +1,153 @@
+.live-list{
+  .pic{
+    float: left;
+    width: 300px;
+    height: 225px;
+    margin-right: 30px;
+  }
+  .desc{
+    overflow: hidden;
+    color: $fc4;
+  }
+  .clearfix{
+    .nowti{
+      // line-height: 40px;
+      font-size: 22px;
+      font-weight: bold;
+      color: $mc1;
+    }
+  }
+  .btn-book{
+    float: right;
+    margin-left: 10px;
+  }
+  .tx{
+    margin-top: 4px;
+    height: 24px * 3;
+  }
+  .live-contacts{
+    margin-top: 25px;
+  }
+  li{
+    position: relative;
+    z-index: 1;
+    padding: 20px 0;
+    @media screen and (min-width:1025px) {
+      &:hover{
+        .bg{
+          @include show;
+        }
+      }
+    }
+  }
+  .bg{
+    @include ba;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: -20px;
+    right: -20px;
+    background: #fff;
+    @include hide;
+    @include mt4;
+  }
+}
+
+.btn-book{
+  @include di;
+  float: none !important;
+  background: none !important;
+  min-width: 114px;
+  height: 40px !important;
+  padding: 0 10px;
+  border: 1px solid $mc3;
+  border-radius: 20px;
+  line-height: 40px - 2px !important;
+  font-size: 12px;
+  text-align: center;
+  color: $mc3 !important;
+  font-weight: bold;
+  &:before{
+    margin-right: 5px;
+    font-weight: normal;
+  }
+}
+
+.btn-book-hv{
+  @media screen and (min-width:1025px) {
+    &:hover, &:hover .btn-book{
+      background: $mc2 !important;
+      border-color: $mc2;
+      color: #fff !important;
+    }
+  }
+}
+
+.live-contacts{
+  border-top: 2px solid $mc3;
+  .nowti{
+    border-bottom: 2px solid $mc3;
+    line-height: 36px;
+  }
+  a{
+    color: $fc4;
+    font-size: 12px;
+    &:before{
+      margin-right: 5px;
+      color: $mc3;
+      @include mt3;
+    }
+    @media screen and (min-width:1025px) {
+      &:not(.na):hover{
+        color: $mc2;
+        &:before{
+          color: $mc2;
+        }
+      }
+    }
+  }
+}
+
+.live-nav{
+  border-bottom: 4px solid $mc3;
+  border-color: rgba(75,93,106,.2);
+  li{
+    float: left;
+    margin-right: 30px;
+  }
+  a{
+    display: block;
+    position: relative;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: $mc3;
+    &:before{
+      @include hl($mc2, 4px);
+      bottom: -4px;
+    }
+    &.act{
+      color: $mc2;
+      &:before{
+        @include hlw;
+      }
+    }
+    @media screen and (min-width:1025px) {
+      &:hover{
+        color: $mc2;
+      }
+    }
+  }
+}
+
+.live-page{
+  .live-nav{
+    margin-bottom: 20px;
+  }
+}
+
+.ab-intro{
+  li + li{
+    margin-top: 50px;
+  }
+}

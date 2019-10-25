@@ -1,0 +1,82 @@
+.play-list{
+  li{
+    width: 33.33%;
+    float: left;
+    margin-bottom: 45px;
+  }
+  .item{
+    position: relative;
+    z-index: 1;
+    padding: 0 30px 30px;
+    &:before{
+      @include ba;
+      z-index: -1;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 64px + 16px + 30px + 45px;
+      background: #fff;
+      @include hide;
+      @include mt4;
+    }
+    @media screen and (min-width:1025px) {
+      &:hover{
+        &:before{
+          @include show;
+        }
+      }
+    }
+  }
+  .pai{
+    display: block;
+    padding-bottom: (225 / 300) * 100%;
+  }
+  .desc{
+    display: block;
+    height: 64px;
+    margin-top: 16px;
+    border-bottom: 4px solid $mc3;
+    border-top: 4px solid $mc3;
+    color: $mc3;
+  }
+  .nowti{
+    line-height: 64px - 4px - 4px;
+    font-size: 18px;
+    font-weight: bold;
+    color: $mc1;
+  }
+  .btn-wrap{
+    float: right;
+    margin-left: 10px;
+  }
+  .btn{
+    padding-top: (64px - 4px - 4px - 20px) / 2;
+    color: $mc3;
+  }
+}
+
+.fangdajing-btn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -20px 0 0 -20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  transform: translateY(-20px);
+  @include hide;
+  @include mt4;
+}
+
+.fangdajing-hv{
+  @media screen and (min-width:1025px) {
+    &:hover{
+      .fangdajing-btn{
+        transform: none;
+        @include show;
+      }
+    }
+  }
+}

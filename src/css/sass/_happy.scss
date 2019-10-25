@@ -1,0 +1,76 @@
+.happy-pw{
+  width: 1360px;
+}
+
+.happy-page{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 35px;
+  .bdsharebuttonbox{
+    margin-bottom: 15px;
+  }
+}
+
+.happy-list{
+  .item{
+    width: 25%;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .c{
+    display: block;
+    padding: 20px;
+    color: $fc4;
+    @media screen and (min-width:1025px) {
+      &:hover{
+        background: #fff;
+        .ti{
+          color: $mc2;
+        }
+      }
+    }
+    > .pic{
+      margin-bottom: 20px;
+    }
+  }
+  .desc{
+    padding-top: 15px;
+    border-top: 4px solid $mc1;
+  }
+  .ti{
+    font-size: 16px;
+    font-weight: bold;
+    color: $mc5;
+    line-height: 24px !important;
+    max-height: 24px * 2;
+    overflow: hidden;
+    @include mt3;
+  }
+  .tx{
+    margin-top: 15px;
+    max-height: 24px * 3;
+  }
+  .user-wrap{
+    padding-top: 15px;
+    margin-top: 25px;
+    border-top: 1px solid $mc3;
+    border-color: rgba(75,93,106,.5);
+  }
+  .btn-collect{
+    position: absolute;
+    right: 20px;
+    bottom: 20px + 6px;
+  }
+}
+
+.btn-collect{
+  color: $mc3;
+  font-size: 14px;
+  line-height: 20px;
+  &:before{
+    margin-right: 5px;
+  }
+  &.act{
+    color: $mc2;
+  }
+}

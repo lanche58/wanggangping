@@ -312,10 +312,8 @@
 .cul-back{
   position: fixed;
   z-index: 900;
-  left: 50%;
-  top: 80px;
-  margin: 100px 0 0 (-(960px / 2) - 240px);
-  width: 100px;
+  left: 12.5%;
+  top: 180px;
   li{
     &:first-child{
       position: relative;

@@ -1,0 +1,23 @@
+<div class="seeMoreBigImgsWrap">
+    <div class="moreBigImgs bigimgs-arrows u-slick">
+        <div class="item"><img src="img/big.jpg" class="ig" alt=""></div>
+        <div class="item"><img src="img/big.jpg" class="ig" alt=""></div>
+        <div class="item"><img src="img/big.jpg" class="ig" alt=""></div>
+    </div>
+    <a class="icon iconfont iconguanbi bigimgs-close"></a>
+    <p class="nowti">石棉长征梦大酒店</p>
+    <script>
+        function init() {
+            $('.moreBigImgs .item').css({ height: w_height, width: w_width });
+        }
+        init();
+        $(window).resize(function() {
+            init();
+        });
+        setTimeout(function() {
+            $('.moreBigImgs').slick({
+                fade: true,
+            });
+        }, 100);
+    </script>
+</div>

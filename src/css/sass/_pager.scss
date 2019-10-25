@@ -1,0 +1,27 @@
+.pager{
+  text-align: left;
+  a{
+    width: 64px;
+    height: 64px;
+    border: 4px solid $mc3;
+    line-height: 64px - 8px;
+    font-size: 16px;
+    color: $mc3;
+    text-align: center;
+    font-weight: bold;
+    + a{
+      margin-left: 16px;
+    }
+    &.act{
+      border-color: $mc2;
+      color: $mc2;
+    }
+    @media screen and (min-width:1025px) {
+      &:hover{
+        border-color: $mc2;
+        color: $mc2;
+      }
+    }
+  }
+}
+
